@@ -1,0 +1,815 @@
+/* -------------------------------
+   Apple SD Gothic Neo Font Family
+--------------------------------*/
+@font-face {
+    font-family: "Apple SD Gothic Neo";
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+    src: url("https://cdn.jsdelivr.net/gh/fonts-archive/AppleSDGothicNeo/AppleSDGothicNeo-Thin.woff2")
+            format("woff2"),
+        url("https://cdn.jsdelivr.net/gh/fonts-archive/AppleSDGothicNeo/AppleSDGothicNeo-Thin.ttf")
+            format("truetype");
+}
+@font-face {
+    font-family: "Apple SD Gothic Neo";
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+    src: url("https://cdn.jsdelivr.net/gh/fonts-archive/AppleSDGothicNeo/AppleSDGothicNeo-ExtraLight.woff2")
+            format("woff2"),
+        url("https://cdn.jsdelivr.net/gh/fonts-archive/AppleSDGothicNeo/AppleSDGothicNeo-ExtraLight.ttf")
+            format("truetype");
+}
+@font-face {
+    font-family: "Apple SD Gothic Neo";
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+    src: url("https://cdn.jsdelivr.net/gh/fonts-archive/AppleSDGothicNeo/AppleSDGothicNeo-Light.woff2")
+            format("woff2"),
+        url("https://cdn.jsdelivr.net/gh/fonts-archive/AppleSDGothicNeo/AppleSDGothicNeo-Light.ttf")
+            format("truetype");
+}
+@font-face {
+    font-family: "Apple SD Gothic Neo";
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    src: url("https://cdn.jsdelivr.net/gh/fonts-archive/AppleSDGothicNeo/AppleSDGothicNeo-Regular.woff2")
+            format("woff2"),
+        url("https://cdn.jsdelivr.net/gh/fonts-archive/AppleSDGothicNeo/AppleSDGothicNeo-Regular.ttf")
+            format("truetype");
+}
+@font-face {
+    font-family: "Apple SD Gothic Neo";
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+    src: url("https://cdn.jsdelivr.net/gh/fonts-archive/AppleSDGothicNeo/AppleSDGothicNeo-Medium.woff2")
+            format("woff2"),
+        url("https://cdn.jsdelivr.net/gh/fonts-archive/AppleSDGothicNeo/AppleSDGothicNeo-Medium.ttf")
+            format("truetype");
+}
+@font-face {
+    font-family: "Apple SD Gothic Neo";
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+    src: url("https://cdn.jsdelivr.net/gh/fonts-archive/AppleSDGothicNeo/AppleSDGothicNeo-SemiBold.woff2")
+            format("woff2"),
+        url("https://cdn.jsdelivr.net/gh/fonts-archive/AppleSDGothicNeo/AppleSDGothicNeo-SemiBold.ttf")
+            format("truetype");
+}
+@font-face {
+    font-family: "Apple SD Gothic Neo";
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+    src: url("https://cdn.jsdelivr.net/gh/fonts-archive/AppleSDGothicNeo/AppleSDGothicNeo-Bold.woff2")
+            format("woff2"),
+        url("https://cdn.jsdelivr.net/gh/fonts-archive/AppleSDGothicNeo/AppleSDGothicNeo-Bold.ttf")
+            format("truetype");
+}
+@font-face {
+    font-family: "Apple SD Gothic Neo";
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+    src: url("https://cdn.jsdelivr.net/gh/fonts-archive/AppleSDGothicNeo/AppleSDGothicNeo-ExtraBold.woff2")
+            format("woff2"),
+        url("https://cdn.jsdelivr.net/gh/fonts-archive/AppleSDGothicNeo/AppleSDGothicNeo-ExtraBold.ttf")
+            format("truetype");
+}
+@font-face {
+    font-family: "Apple SD Gothic Neo";
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+    src: url("https://cdn.jsdelivr.net/gh/fonts-archive/AppleSDGothicNeo/AppleSDGothicNeo-Black.woff2")
+            format("woff2"),
+        url("https://cdn.jsdelivr.net/gh/fonts-archive/AppleSDGothicNeo/AppleSDGothicNeo-Black.ttf")
+            format("truetype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Apple SD Gothic Neo", sans-serif;
+    color: #f5f5f5;
+    background-color: #050505;
+}
+
+h1 {
+    line-height: 1.6;
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    /* border-bottom: 1px solid #838383; */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    /* background-color: rgba(0, 0, 0, 0.1); */
+}
+
+.logo {
+    list-style: none;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #fc4000;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #dadada;
+    font-weight: 400;
+    font-size: 14px;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: #fc4000;
+}
+
+/* Hero */
+
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding: 6% 5%;
+    /* background-color: #050505; */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(assets/hyukoh-img4.jpg);
+    background-size: cover;
+    z-index: 1;
+}
+
+.hero-text h2 {
+    font-size: 68px;
+    font-weight: 900;
+    color: #f5f5f5;
+}
+
+.hero-text p {
+    margin-top: 18px;
+    font-size: 16px;
+    color: #dadada;
+}
+
+/* INTRO */
+.intro {
+    padding: 0px 5% 100px;
+    background-color: #050505;
+}
+
+.intro-text {
+    max-width: 58%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.8;
+    font-weight: 500;
+    font-size: 31px;
+}
+
+/* BAND INTRO */
+.band-intro {
+    margin-top: 4%;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 2%;
+    /* border: 1px solid wheat; */
+    height: 580px;
+}
+
+.band-left {
+    position: relative;
+    width: 48%;
+    height: 100%;
+}
+
+.band-left .band-image {
+    width: 100%;
+    height: 100%;
+    background-image: url(assets/hyukoh-img3.jpg);
+    background-size: cover;
+    transform: scaleX(-1);
+}
+
+.band-left h1 {
+    position: absolute;
+    bottom: 370px;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    color: #fc4000;
+    font-size: 130px;
+    z-index: 2;
+    mix-blend-mode: difference;
+}
+
+.band-right {
+    width: 32%;
+}
+
+.band-right h1 {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.band-right p {
+    margin-top: 14px;
+    line-height: 1.6;
+    color: #b3b3b3;
+    font-size: 18px;
+}
+
+/* BAND CARDS */
+.card-h1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: end;
+    margin-top: 250px;
+    font-size: 31px;
+    color: #fc4000;
+}
+
+.band-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    gap: 3%;
+}
+
+.card {
+    position: relative;
+    flex: 1;
+    width: 22%;
+    text-align: left;
+    overflow: hidden; /* ✅ 이미지가 커져도 안 넘어가게 */
+    cursor: pointer;
+}
+
+.img-wrap {
+    overflow: hidden;
+}
+
+.card-img {
+    position: relative;
+    width: 100%;
+    height: 320px;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.5s ease;
+    transform-origin: center center; /* ✅ 확대 기준을 정중앙으로 고정 */
+}
+
+/* ✅ 확대 시도해도 중앙 기준으로 커지게 */
+.card-img:hover {
+    transform: scale(1.1);
+}
+
+/* ✅ 오버레이 효과 */
+.overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.card-img:hover .overlay {
+    opacity: 1;
+}
+
+.overlay h3 {
+    color: #fff;
+    font-size: 22px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+/* ✅ 개별 이미지 배경 */
+.member-q {
+    background-image: url(assets/member-oh.jpg);
+}
+
+.member-w {
+    background-image: url(assets/member-hyunjae.webp);
+}
+
+.member-e {
+    background-image: url(assets/member-dong.webp);
+}
+
+.member-r {
+    background-image: url(assets/member-inwoo.webp);
+}
+
+/* ✅ 텍스트 스타일 */
+.card p {
+    font-weight: 600;
+    font-size: 22px;
+    margin: 18px 0 8px;
+}
+
+.card span {
+    display: block;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.4;
+}
+
+/* Track */
+.track {
+    padding: 5% 5%;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    position: relative;
+    overflow: hidden;
+}
+
+.bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    filter: brightness(0.6);
+}
+
+.track-hero {
+    display: flex;
+    gap: 18px;
+    /* border: 1px solid red; */
+}
+
+.track-img {
+    width: 52px;
+    height: 52px;
+    background-image: url(/assets/play-img.png);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+    /* border: 1px solid red; */
+}
+
+.track-hero p {
+    font-size: 52px;
+    line-height: 52px;
+    font-weight: 700;
+}
+
+.album-section {
+    display: flex;
+    justify-content: center;
+    margin: 150px 5% 80px;
+}
+
+.album-wrap {
+    display: flex;
+    gap: 28px;
+    justify-content: flex-start;
+    align-items: flex-end;
+    /* border: 1px solid red; */
+}
+
+.album {
+    width: 400px;
+    height: 400px;
+    background-image: url(assets/album.webp);
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.red {
+    color: #fc4000;
+}
+
+.album-text-wrap p {
+    font-size: 16px;
+    color: #8a8a8a;
+    margin-top: 14px;
+    /* border: 1px solid red; */
+}
+
+.list-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px 5% 200px;
+    gap: 2px;
+}
+
+.list {
+    width: 78%;
+    height: 52px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* ✅ 요거 추가 */
+    padding: 0px 2%;
+    border-radius: 8px;
+    margin: 0 auto;
+}
+
+.gray {
+    background-color: #1c1c1c;
+}
+
+.list-text-wrap {
+    display: flex;
+    gap: 18px;
+    /* border: 1px solid red; */
+}
+
+.list-text-wrap .num {
+    font-size: 18px;
+    font-weight: 600;
+    color: #454545;
+}
+
+.list-text-wrap .name {
+    font-size: 18px;
+    font-weight: 500;
+    color: #7d7d7d;
+}
+
+.list .time {
+    font-size: 16px;
+    font-weight: 600;
+    color: #4e4e4e;
+}
+
+.track-8 {
+    margin: 0 auto;
+    width: 38%;
+    display: flex;
+    flex-direction: column;
+}
+
+.track-8-name {
+    font-size: 31px;
+    font-weight: 600;
+    padding: 44px 0 0;
+    /* border: 1px solid red; */
+}
+
+.track-8 p {
+    margin-top: 14px;
+}
+
+.pp {
+    font-size: 16px;
+    color: #adadad;
+}
+
+.audio-wrapper {
+    transform: scale(0.8);
+    transform-origin: left center; /* 왼쪽 기준으로 확대 */
+}
+
+.track-8 audio {
+    margin-top: 24px;
+    margin-bottom: 48px;
+}
+
+/* Instruments */
+.instruments .session {
+    position: relative; /* ✅ 영상 위치 기준을 세션으로 한정 */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* ✅ 영상 넘침 방지 */
+}
+
+.session h2 {
+    font-size: 31px;
+    font-weight: 800;
+    margin-top: 20%;
+}
+
+.session p {
+    margin: 10px 0 20px;
+    background-color: #050505;
+}
+
+/* ------------------ */
+/* 가사 섹션 영역 */
+/* ------------------ */
+
+.lyrics-wrap * {
+    position: relative;
+    z-index: 2; /* ✅ 콘텐츠는 위로 */
+}
+
+.lyrics-wrap {
+    height: 100vh; /* 화면 높이 고정 */
+    position: relative; /* ✅ 배경과 콘텐츠의 기준 */
+    height: 100vh;
+    overflow: hidden;
+}
+
+.lyrics-bg {
+    position: absolute;
+    inset: 0;
+    background: url("assets/album.webp") center/cover no-repeat;
+    filter: grayscale(100%) blur(12px); /* ✅ 흑백 + 블러 동시 적용 */
+    transform: scale(1.05); /* ✅ 블러 잘림 방지 */
+    z-index: 1; /* ✅ 콘텐츠보다 뒤로 */
+}
+
+.lyrics-bg::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45); /* ✅ 어둡게 오버레이 */
+}
+
+.lyrics-margin {
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    overflow: hidden; /* 가사 스크롤 박스만 스크롤 */
+    gap: 4%;
+    margin: 0 5%;
+}
+
+.lyrics-top {
+    margin: 100px 5% 60px;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    align-items: center;
+}
+
+.lyrics-text-wrap {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.lyrics-text-wrap h1 {
+    font-size: 31px;
+    font-weight: 800;
+}
+
+.lyrics-text-wrap h4 {
+    color: #b2b2b2;
+    font-weight: 400;
+    margin-top: 8px;
+}
+
+.colors-wrap {
+    /* border: 1px solid red; */
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+    /* height: 18%; */
+    /* margin-bottom: 38px; */
+}
+
+.lyric-box {
+    width: 78px;
+    height: 28px;
+    border-radius: 17px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.lyric-box span {
+    /* border: 1px solid red; */
+    line-height: 27px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.black {
+    background: rgba(0, 0, 0, 0.819);
+    width: 100%;
+    height: 100%;
+    padding: 24px;
+}
+
+.red-box {
+    background-color: #ff5930;
+}
+
+.blue-box {
+    /* border: 1px solid #0044ff; */
+    background-color: #0044ff;
+}
+
+.white-box {
+    /* border: 1px solid #fafffa; */
+    background-color: #fafffa;
+}
+
+.white-box span {
+    color: #050505;
+}
+
+.green-box {
+    /* border: 1px solid #abfa54; */
+    background-color: #abfa54;
+}
+
+.green-box span {
+    color: #050505;
+}
+
+.lyrics-box p {
+    color: #7a7a7a;
+    font-size: 34px;
+    font-weight: 600;
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: flex;
+    justify-content: center;
+}
+
+/* 감정별 hover 효과 */
+p.sad:hover {
+    color: #0044ff;
+    transform: scale(1.05);
+}
+
+p.pain:hover {
+    color: #ff5930;
+    transform: scale(1.05);
+}
+
+p.calm:hover {
+    color: #fafffa;
+    transform: scale(1.05);
+}
+
+p.hope:hover {
+    color: #abfa54;
+    transform: scale(1.05);
+}
+
+/* 스크롤 박스 */
+.lyrics-scroll {
+    position: relative;
+    width: 54%;
+    height: 60%;
+    overflow-y: scroll; /* ✅ 내부만 스크롤 */
+    background: rgba(0, 0, 0, 0.198);
+    padding: 40px;
+    border-radius: 16px;
+    backdrop-filter: blur(6px);
+}
+
+/* 스크롤바 디자인 */
+.lyrics-scroll::-webkit-scrollbar {
+    width: 6px;
+}
+.lyrics-scroll::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.11);
+    border-radius: 3px;
+}
+
+/* Output */
+.output-section {
+    width: 100%;
+    padding: 100px 5% 0;
+    position: relative;
+}
+
+.output-text-wrap {
+    margin-bottom: 100px;
+}
+
+.output-text-wrap .sub {
+    color: #e6e6e6;
+    font-weight: 400;
+    margin-top: 8px;
+}
+
+/* 트랙 데이터 설명 */
+.output-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 120px;
+    margin-bottom: 100px;
+}
+
+.left-title {
+    flex: 1;
+    text-align: left;
+}
+
+.left-title p {
+    font-size: 14px;
+    color: #555;
+}
+
+.right-desc {
+    flex: 3;
+    max-width: 48%;
+}
+
+.right-desc p {
+    font-size: 20px;
+    line-height: 1.8;
+    color: #f5f5f5;
+}
+
+/* ---------- 이미지 섹션 ---------- */
+.output-images {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    /* border: 1px solid #ccc; */
+    height: 1000px; /* 이미지 세 장 전체가 들어갈 공간 */
+}
+
+/* 공통 이미지 스타일 */
+.img-box {
+    position: absolute;
+    width: 420px;
+    height: 593px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+/* 첫 번째 이미지 — 왼쪽 상단 */
+.img1 {
+    top: 0;
+    left: 0;
+    background-image: url("assets/Layer_4.jpg");
+}
+
+/* 두 번째 이미지 — 가운데로 약간 이동 */
+.img2 {
+    top: 15%; /* ✅ 부모 높이의 15%만큼 아래로 */
+    left: 35%; /* ✅ 부모 너비의 35%만큼 오른쪽으로 */
+    background-image: url("assets//Layer_4-1.jpg");
+}
+
+/* 세 번째 이미지 — 오른쪽 아래로 더 이동 */
+.img3 {
+    top: 30%; /* ✅ 부모 높이의 30%만큼 아래로 */
+    left: 70%; /* ✅ 부모 너비의 70%만큼 오른쪽으로 */
+    background-image: url("assets/Layer_4-2.jpg");
+}
+
+/* FOOTER */
+footer {
+    padding: 40px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    font-size: 13px;
+    color: #555;
+    border-top: 1px solid #555;
+    position: relative;
+    z-index: 6;
+    background-color: #050505;
+}

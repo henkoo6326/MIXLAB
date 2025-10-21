@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>MIX LAB</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <!-- 헤더더더더더더 -->
+        <header>
+            <ul class="logo">
+                <li><a href="index.html">MIX LAB</a></li>
+            </ul>
+            <nav>
+                <ul>
+                    <li><a href="intro.html">Intro</a></li>
+                    <li><a href="track.html">Track</a></li>
+                    <li><a href="lyrics.html">Lyrics</a></li>
+                    <li><a href="instruments.html">Instruments</a></li>
+                    <li><a href="output.html">Output</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- 가사 섹션 -->
+        <section class="lyrics-wrap">
+            <div class="lyrics-bg">
+                <div class="black"></div>
+            </div>
+            <div class="lyrics-top">
+                <div class="lyrics-text-wrap">
+                    <h1 class="red">Lyrics & Emotion</h1>
+                    <h4>가사의 단어를 감정 온도로 분리해 읽는다.</h4>
+                </div>
+                <div class="colors-wrap">
+                    <div class="red-box lyric-box">
+                        <span>#PAIN</span>
+                    </div>
+                    <div class="white-box lyric-box">
+                        <span>#CALM</span>
+                    </div>
+                    <div class="green-box lyric-box">
+                        <span>#HOPE</span>
+                    </div>
+                    <div class="blue-box lyric-box">
+                        <span>#SAD</span>
+                    </div>
+                </div>
+            </div>
+            <div class="lyrics-margin">
+                <!-- <div class="lyrics-left">
+                    <div class="album-cover">
+                        <div class="lyrics-album">
+                            <div class="black">
+                                <div>
+                                    <h1>23</h1>
+                                    <h4>혁오</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+                <div class="lyrics-scroll">
+                    <div class="lyrics-box">
+                        <p class="sad">뚝 밑에 앉아서 한참을 서성이다</p>
+                        <p class="pain">일몰이 무서워 집으로 돌아오다</p>
+                        <p class="sad">짠 눈물 자국을 들킬까 맘 졸였던</p>
+                        <p class="calm">그날로부터가 만으로 한살이야</p>
+
+                        <p class="sad">등 떠밀려 다시 또 짐을 싼 후</p>
+                        <p class="pain">감흥 없는 저 눈물을 챙긴 후</p>
+                        <p class="pain">배신과 배려가 베어 나오는</p>
+                        <p class="calm">양지 바른 곳에 나는 묻힐래</p>
+
+                        <p class="calm">We all die alone</p>
+                        <p class="calm">We are all alone</p>
+                        <p class="hope">Lord come take my soul</p>
+                        <p class="hope">So we can all reborn</p>
+
+                        <p class="calm">We all die alone</p>
+                        <p class="calm">We are all alone</p>
+                        <p class="hope">Lord come take my soul</p>
+                        <p class="hope">So we can all reborn</p>
+
+                        <p class="pain">날 떠날 사람은 얼른들 줄을 서요</p>
+                        <p class="sad">눈을 부리며 마지막 마지막을 외워본다</p>
+                        <p class="sad">그래 어차피 여긴 나 있을 곳 아니었고</p>
+                        <p class="pain">
+                            뚝을 넘어 줄은 길게도 늘어져 끝이 없네
+                        </p>
+
+                        <p class="sad">등 떠밀려 다시 또 짐을 싼 후</p>
+                        <p class="pain">감흥 없는 저 눈물을 챙긴 후</p>
+                        <p class="pain">배신과 배려가 배어나오는</p>
+                        <p class="calm">양지 바른 곳에 나는 묻힐래</p>
+
+                        <p class="calm">We all die alone</p>
+                        <p class="calm">We are all alone</p>
+                        <p class="hope">Lord come take my soul</p>
+                        <p class="hope">So we can all reborn</p>
+
+                        <p class="calm">We all die alone</p>
+                        <p class="calm">We are all alone</p>
+                        <p class="hope">Lord come take my soul</p>
+                        <p class="hope">So we can all reborn</p>
+
+                        <p class="calm">We all die alone</p>
+                        <p class="calm">We are all alone</p>
+                        <p class="hope">Lord come take my soul</p>
+                        <p class="hope">So we can all reborn</p>
+
+                        <p class="pain">날 떠날 사람은 얼른들 줄을 서요</p>
+                        <p class="sad">눈을 부리며 마지막 마지막을 외어본다</p>
+                        <p class="sad">그래 어차피 여긴 나 있을 곳 아니었고</p>
+                        <p class="pain">
+                            뚝을 넘어 줄은 길게도 늘어져 끝이 없네
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+            <p>
+                ©2025 Haeeun Ko. All Rights Reserved.<br />
+                Designed by Haeeun Ko / Kaywon University
+            </p>
+            <p class="logo">MIX LAB</p>
+        </footer>
+
+        <script>
+            const album = document.querySelector(".lyrics-album");
+            const colorBoxes = document.querySelectorAll(
+                ".colors-wrap .lyric-box"
+            );
+
+            colorBoxes.forEach((box) => {
+                box.addEventListener("mouseenter", () => {
+                    if (box.classList.contains("red-box")) {
+                        album.style.backgroundImage =
+                            "url('assets/red-emotion.jpg')";
+                    } else if (box.classList.contains("white-box")) {
+                        album.style.backgroundImage =
+                            "url('assets/white-emotion.jpg')";
+                    } else if (box.classList.contains("green-box")) {
+                        album.style.backgroundImage =
+                            "url('assets/green-emotion.jpg')";
+                    } else if (box.classList.contains("blue-box")) {
+                        album.style.backgroundImage =
+                            "url('assets/blue-emotion.jpg')";
+                    }
+                });
+
+                box.addEventListener("mouseleave", () => {
+                    album.style.backgroundImage = "url('assets/album.webp')"; // 기본 이미지로 복귀
+                });
+            });
+        </script>
+    </body>
+</html>
